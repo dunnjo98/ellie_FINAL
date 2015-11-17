@@ -1,0 +1,181 @@
+/*
+aoi 
+  background: #69D2E7;
+  background: rgba(105, 210, 231, 1); 
+pond {
+  background: #A7DBD8;
+  background: rgba(167, 219, 216, 1);
+storm {
+  background: #E0E4CC;
+  background: rgba(224, 228, 204, 1);
+goldfish {
+  background: #F38630;
+  background: rgba(243, 134, 48, 1);
+pill 
+  background: #FA6900;
+  background: rgba(250, 105, 0, 1); 
+*/
+
+
+/*Tables section*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 200;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: rgba(105, 210, 231, .5);
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 900;
+  color: #FA6900;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  padding: 40px;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+}
+
+.table, .contact-section, .video, .gallery{
+  margin: 0 0 15px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+  display: table;
+}
+
+@media screen and (max-width: 400px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #fff;
+}
+.row:nth-of-type(odd) {
+  background: #FED9BF;
+}
+.row.header {
+  font-weight: 700;
+  color: #ffffff;
+  background: #F38630;
+}
+.row.pill {
+  background: #FA6900;
+}
+.row.blue {
+  background: #69D2E7;
+}
+@media screen and (max-width: 400px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
+.award {
+  color: #FA6900;
+  font-size: .75em;
+}
+
+/*Tabbing sections for resume section*/
+
+ul.tabs{
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    ul.tabs li{
+      background: none;
+      color: #FA6900;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    ul.tabs li:hover {
+      color: #69D2E7;
+    }
+
+    ul.tabs li.current{
+      background: #ddd;
+      color: #000;
+    }
+
+    .tab-content{
+      display: none;
+      background: #ddd;
+      padding: 15px;
+    }
+
+    .tab-content.current{
+      display: inherit;
+    }
+
+
+/* Footer */
+footer {
+  color: #aaa;
+  font-size: .75em;
+  text-align: right;
+}
+
+/*Carousel of Videos*/
+.frame {
+  width: 800px;
+  /*height: 600px;*/
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+.tray {
+  /*width: 2400px; -- Because of JS, this is not needed */
+  position: relative;
+}
+
+.slide {
+  width: 800px;
+  height: 600px;
+  /*float: left;*/
+}
+.prev, .next {
+  position: absolute;
+  top: 49%;
+  color: #a7dbd8;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.prev { left: 0;}
+.next { right: 0;}
+
+.prev:hover, .next:hover{
+  color: #69d2e7;
+}
