@@ -14,7 +14,27 @@ goldfish {
 pill 
   background: #FA6900;
   background: rgba(250, 105, 0, 1); 
-*/
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+global fixes on some things */
+
+
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
 
 
 /*Tables section*/
@@ -32,7 +52,7 @@ body {
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 50px;
   font-weight: 900;
   color: #FA6900;
   -webkit-font-smoothing: antialiased;
@@ -42,21 +62,46 @@ h1 {
 .wrapper {
   margin: 0 auto;
   position: relative;
-  padding: 40px;
+  padding: 20px;
   max-width: 800px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
 }
+.header_div {
+  margin-top: 20px;
+  width: 800px;
+  height: 350px;
+  background: url(../images/header_image.png) no-repeat;
+}
 
-.table, .contact-section, .video, .gallery{
+
+@media only screen and (max-width: 800px) {
+  .header_div {
+    margin-top: 0;
+    width: 500px;
+    height: 219px;
+    background: url(../images/header_image_m.png) no-repeat right;
+  }
+
+}
+
+.table, .contact-section, .video, .gallery {
   margin: 0 0 15px 0;
   width: 100%;
   box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
   display: table;
+}
+
+.contact-section, .gallery {
+  padding: 5px;
+}
+
+.video {
+  position: relative;
 }
 
 @media screen and (max-width: 400px) {
@@ -105,7 +150,7 @@ h1 {
   font-size: .75em;
 }
 
-/*Tabbing sections for resume section*/
+/*                   Tabbing sections for resume section                 */
 
 ul.tabs{
       margin: 0px;
@@ -146,9 +191,10 @@ footer {
   text-align: right;
 }
 
-/*Carousel of Videos*/
+/* --------------------------------- Carousel of Videos*/
 .frame {
-  width: 800px;
+  margin: 0 auto;
+  width: 560px;
   /*height: 600px;*/
   position: relative;
   /*overflow: hidden;*/
@@ -160,8 +206,9 @@ footer {
 }
 
 .slide {
-  width: 800px;
-  height: 600px;
+  width: 560px;
+  height: 315px;
+  background-color: #fff;
   /*float: left;*/
 }
 .prev, .next {
@@ -178,4 +225,43 @@ footer {
 
 .prev:hover, .next:hover{
   color: #69d2e7;
+}
+
+
+/* /////// Contact Elements ///////// */
+input, textarea {
+  display: block;
+  width: 98%;
+  padding: 5px;
+  margin-bottom: 2px;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  margin-top: 2px;
+  width: 90px;
+  background: #69D2E7;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background: #A7DBD8;
+}
+
+input.error, textarea.error {
+  border: 1px solid #FA6900;
+}
+
+span.error {
+  display: none;
+  color: #FA6900;
+}
+
+input.verify-box {
+  display: inline-block;
+  width: 78%;
+  margin-right: 2%;
 }

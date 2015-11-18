@@ -2,10 +2,11 @@
 <html lang="en">
 <meta charset="utf-8">
 <head>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/nav.css">
-	<!--<script src="js/modernizr.js"></script> Download Modernizr-->
 
 	<title>Ellie J. Dunn — Talent</title>
 	<meta name="" content="">
@@ -22,23 +23,24 @@
 <!-- End Navigation -->
 
 <!--Resume table-->
-<div class="wrapper">
+<div class="wrapper" id="top">
 	<div id="cd-nav">
 		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
 	 
 		<nav id="cd-main-nav">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#0">Resume</a></li>
-				<li><a href="#0">Video/Audio</a></li>
-				<li><a href="#0">Contact</a></li>
+				<li><a href="#top">Home</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#vids">Video/Audio</a></li>
+				<li><a href="#images">Images</a></li>
+				<li><a href="#contactme">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
 
-	<div class="header"><img src="images/header_image.png"></div>
+	<div class="header_div"></div>
 
-<h1>Resume</h1>
+<h1 id="resume">Resume</h1>
 
 	<ul class="tabs">
 		<li class="tab-link current" data-tab="tab-1">TV/Web</li>
@@ -290,7 +292,7 @@
 
 
 
-  <h1>Video/Audio</h1>  
+  <h1 id="vids">Video/Audio</h1>  
     <!--Carousel of Video and Audio clips-->
     <div class="video">
     	
@@ -299,37 +301,57 @@
 			    <div class="tray">
 
 			      <div class="slide">
-				      <iframe width="800" height="600" src="https://youtu.be/embed/LdT8OKRU6zg" frameborder="0" allowfullscreen></iframe>			     
+			      	
+				      <iframe width="560" height="315" src="https://www.youtube.com/embed/LdT8OKRU6zg" frameborder="0" allowfullscreen></iframe>
+				      		     
 			      </div>
 
 			      <div class="slide">
-			        <iframe width="800" height="600" src="https://youtu.be/embed/d4YBaeLJXQc" frameborder="0" allowfullscreen></iframe>			        
+			      				      	
+			        <iframe width="560" height="315" src="https://www.youtube.com/embed/d4YBaeLJXQc" frameborder="0" allowfullscreen></iframe>
+			        
 			      </div>
 
 			      <div class="slide">
-			        <iframe width="800" height="600" src="https://youtu.be/embed/B6faV-rMupc" frameborder="0" allowfullscreen></iframe>
-			      </div>
+
+			      <iframe width="560" height="315" src="https://www.youtube.com/embed/B6faV-rMupc" frameborder="0" allowfullscreen></iframe>
+			    </div>
+
 			    </div><!--end tray-->
 
-			    <a href="#" class="prev"> < </a>
-			    <a href="#" class="next"> > </a>
-			  </div><!--end fram div-->
+			    
+			  </div><!--end frame div-->
+			  <a href="#" class="prev"> <i class="icon-arrow-left"></i></a>
+		    <a href="#" class="next"> <i class="icon-arrow-right"></i></a>
     </div><!--End of Video Div-->
 
 
- <h1>Image Gallery</h1>  
+ <h1 id="images">Image Gallery</h1>  
      <!--Gallery of Images with Lightbox-->
     <div class="gallery">
-    	<p>To come</p>
+    	<img src="images/el_ars_t.jpg">
     </div><!--End of Gallery Div-->
 
 
 
- <h1>Contact</h1>  
+ <h1 id="contactme">Contact</h1>  
      <!--Contact form-->
     <div class="contact-section">
-    	<form>
-    		<input type="text" label="email">
+
+    	<form action="#" method="post">
+    		<label for="fullname">Name</label>
+          <span id="fullname-error" class="error">must be more than a character.</span>
+          <input type="text" id="fullname" name="fullname" placeholder="your name"> <br />
+
+          <label for="email">Email</label>
+          <span id="email-error" class="error">must be a valid email.</span>
+          <input type="text" id="email" name="email" placeholder="your email"> <br />
+          
+          <label for="message">Message</label>
+          <span id="message-error" class="error">can not be left blank.</span>
+          <textarea id="message" name="message" rows="10"></textarea><br />
+
+          <input type="submit" value="send">
 
     	</form>
     	<!--Also social Media Tags-->
@@ -337,11 +359,12 @@
 
 
 
-    <footer>@2015 Copyright Ellie Dunn | all rights reserved.</footer>
+    <footer>&copy; 2015 Ellie Dunn. All Rights Reserved.</footer>
   </div><!--End of Wrapper Div-->
   
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/contact.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/carousel.js"></script>
 

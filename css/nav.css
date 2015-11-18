@@ -16,6 +16,8 @@ pill
   background: rgba(250, 105, 0, 1); 
 */
 a {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
   color: #FA6900;
   text-decoration: none;
 }
@@ -100,7 +102,7 @@ a {
 
 
 /*Screen at larger to largest width*/
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 900px) {
   #cd-nav ul {
     /* TOP NAVIGATION */
     position: absolute;
@@ -278,7 +280,7 @@ a {
   -o-transform: rotate(225deg);
   transform: rotate(225deg);
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 900px) {
   .cd-nav-trigger {
     /* the the menu triger is hidden by default on desktop devices */
     visibility: hidden;

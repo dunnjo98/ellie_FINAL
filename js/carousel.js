@@ -4,11 +4,11 @@ $(function(){
       slideCount = $('.slide').size(), 
       clicks = 0;
   //incremental because it is relative
-  //800px measures from the css, more flexible so you don't have to chnge in two locations
+  //800px measures from the css, more flexible so you don't have to change in two locations
 
   //NO Javascript?
   $('.frame').css({
-    'height': '600px',
+    'height': '315px',
     'overflow': 'hidden'
   });
 
@@ -17,7 +17,7 @@ $(function(){
   })
 
   $('.tray').width(slideWidth * slideCount); 
-  //allows us to get rid of set width on the tray and the amount od slides we add will resize the container
+  //allows us to get rid of set width on the tray and the amount of slides we add will resize the container
 
   $('.next').click(function() {
 
@@ -29,6 +29,8 @@ $(function(){
 
     var slideDistance = slideWidth * clicks;
     $('.tray').animate({'right': slideDistance}, 600);
+
+    event.preventDefault();
 
   });
 
@@ -43,14 +45,17 @@ $(function(){
     var slideDistance = slideWidth * clicks;
     $('.tray').animate({'right': slideDistance}, 600);
 
+    event.preventDefault();
+
   });
 
   $('.prev, .next').hide();
 
-  $('.frame').hover(function(){
+  $('.video').hover(function(){
     $('.prev, .next').show();
   }, function(){
     $('.prev, .next').hide();
   });
+
 
 });
