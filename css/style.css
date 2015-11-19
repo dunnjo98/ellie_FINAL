@@ -108,6 +108,15 @@ h2 {
 .about {
   position: relative;
 }
+.about a {
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 15px;
+  color: #FA6900;
+  text-decoration: none;
+}
+.about a:hover {
+  color: #69D2E7;
+}
 .shell {
   position: inline-block;
   width: 80%;
@@ -387,7 +396,7 @@ input.verify-box {
 .prev2, .next2 { 
   position: absolute; 
   top: 50%; 
-  background: rgba(243, 134, 48, .7); 
+  background: rgba(100, 100, 100, .7); 
   padding: .25em .5em; 
   color: #fff; 
   text-decoration: none; 

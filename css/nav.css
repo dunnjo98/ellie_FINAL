@@ -16,8 +16,8 @@ pill
   background: rgba(250, 105, 0, 1); 
 */
 a {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 14px;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 17px;
   color: #FA6900;
   text-decoration: none;
 }
@@ -101,6 +101,9 @@ a {
   padding: 1.6em;
   border-bottom: 1px solid #eff2f6;
 }
+#cd-nav li a:hover {
+    color: #69D2E7;
+}
 #cd-nav li:last-child a {
   border-bottom: none;
 }
@@ -139,6 +142,9 @@ a {
     border-bottom: none;
   }
   #cd-nav li a:hover {
+    color: #69D2E7;
+  }
+  a:hover {
     color: #69D2E7;
   }
   #cd-nav.is-fixed ul {
