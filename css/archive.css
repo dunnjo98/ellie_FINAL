@@ -1,0 +1,29 @@
+/* /////////////////////////LIGHTBOX ELEMENTS FOR THE GALLERY ///////////////////////////////////////*/
+
+
+/*#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  rgba(167, 219, 216, .7); blue
+  background:  rgba(243, 134, 48, .7); orange
+  text-align: center;
+  padding-top: 25px;
+  z-index: 4;
+}*/
+
+#content {
+  z-index: 4;
+}
+.close_x  {
+  /*text-align: right;*/
+  font-size: 3em;
+  color: #fff;
+  z-index: 4;
+}
+
+.close_x:hover {
+  color: #FA6900;
+}

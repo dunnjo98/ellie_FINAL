@@ -312,6 +312,7 @@ input.verify-box {
   display: inline;
   list-style-type: none;
   padding-right: 5px;
+  padding-top: 5px;
 }
 
 #wrapper { 
@@ -339,7 +340,7 @@ input.verify-box {
   font-size: 4em; 
 }
 
-#lightbox img { 
+video, img { 
   max-width: 100%; 
   max-height: 100%;
 }
