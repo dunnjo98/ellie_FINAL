@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
 
       var lightbox =
           '<div id="lightbox">' +
-          '<p><i class="fa fa-times-circle-o"></i></p>' +
+          '<p></p>' +
           '<div id="slideshow">' +
           '<ul></ul>' +        
           '<div class="nav">' +
