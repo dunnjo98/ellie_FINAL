@@ -378,25 +378,36 @@
      <!--Contact form-->
     <div class="contact-section">
 
-    	<!--<form action="#" method="post">
+    	<?php if ($_GET['s'] == 'success') { ?>
+      	<p>Thank you. Your message has been sent successfully!</p>
+    	<?php } else if ($_GET['s'] == 'error') { ?>
+        <p>Error. Your message was not sent! Make sure you type in the proper verification numbers. <a href="index.php">Click here to try again</a>. If issues persist please send an email manually to ellie.dvorkin@gmail.com, we apologize for the inconvenience. - site admin</p>
+    	<?php } else { ?>
+
+    	<form action="mailer.php" method="post">
     		<label for="fullname">Name</label>
-          <span id="fullname-error" class="error">must be more than a character.</span>
-          <input type="text" id="fullname" name="fullname" placeholder="your name"> <br />
+        <span id="fullname-error" class="error">must be more than a character.</span>
+        <input type="text" id="fullname" name="fullname" placeholder="your name"> <br />
 
-          <label for="email">Email</label>
-          <span id="email-error" class="error">must be a valid email.</span>
-          <input type="text" id="email" name="email" placeholder="your email"> <br />
-          
-          <label for="message">Message</label>
-          <span id="message-error" class="error">can not be left blank.</span>
-          <textarea id="message" name="message" rows="10"></textarea><br />
+        <label for="email">Email</label>
+        <span id="email-error" class="error">must be a valid email.</span>
+        <input type="text" id="email" name="email" placeholder="your email"> <br />
+        
+        <label for="message">Message</label>
+        <span id="message-error" class="error">can not be left blank.</span>
+        <textarea id="message" name="message" rows="10"></textarea><br />
 
-          <input type="submit" value="send">
+        <input type="text" name="verify" class="verify-box" placeholder="verify you're human">
+        <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
 
-    	</form>-->
-    	<a href="mailto:ellie.dvorkin@gmail.com">Email me at ellie.dvorkin@gmail.com</a>
+        <input type="submit" value="send">
+
+    	</form>
+
     	Or
     	Call: 917-541-0367
+			
+			<?php } ?>
     	
     	<!--Also social Media Tags-->
     </div><!--End of Contact Div-->
