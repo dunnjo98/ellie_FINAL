@@ -13,10 +13,10 @@
   $subject      = 'Ellie Dunn - Contacted from Personal Website';
 
   //Set link to your success page
-  $success_page = 'contact.php?s=success';
+  $success_page = 'index.php?s=success';
 
   //Set link to your error page
-  $error_page   = 'contact.php?s=error';
+  $error_page   = 'index.php?s=error';
 
 
   ########## No need to touch the code below this line! ##########
