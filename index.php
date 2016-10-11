@@ -403,9 +403,6 @@
         <input type="submit" value="send">
 
     	</form>
-
-    	Or
-    	Call: 917-541-0367
 			
 			<?php } ?>
     	
